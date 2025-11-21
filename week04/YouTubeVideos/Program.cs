@@ -29,6 +29,12 @@ class Program
         List<Comment> video3Comments = [comment7, comment8, comment9];
 
         Video video3 = new("The Wonders of The Earth", "chillguy", 10490, video3Comments);
-        video3.DisplayInfo();
+
+        List<Video> videos = [video1, video2, video3];
+
+        foreach (Video video in videos)
+        {
+            video.DisplayInfo();
+        }
     }
 }
